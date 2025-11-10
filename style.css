@@ -1,0 +1,117 @@
+/* Основные стили */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a0e29;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Стили для навигационной панели */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Стили для основного контента */
+.container {
+    background-color: #1a1f4b;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Стили для заголовков */
+h1, h2, h3 {
+    color: #4fc3f7;
+    margin-bottom: 20px;
+}
+
+h1 {
+    border-bottom: 2px solid #4fc3f7;
+    padding-bottom: 10px;
+}
+
+/* Стили для изображений */
+.img-fluid {
+    border: 2px solid #4fc3f7;
+    transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.02);
+}
+
+/* Стили для списков */
+.list-group-item {
+    background-color: #252a5c;
+    color: #e0e0e0;
+    border: 1px solid #4fc3f7;
+}
+
+.list-group-item:hover {
+    background-color: #303574;
+}
+
+/* Стили для кнопок */
+.btn-primary {
+    background-color: #4fc3f7;
+    border-color: #4fc3f7;
+    color: #0a0e29;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #29b6f6;
+    border-color: #29b6f6;
+}
+
+/* Стили для ссылок */
+a {
+    color: #4fc3f7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #29b6f6;
+    text-decoration: underline;
+}
+
+/* Стили для модального окна */
+.modal-content {
+    background-color: #1a1f4b;
+    color: #e0e0e0;
+}
+
+.modal-header {
+    border-bottom: 1px solid #4fc3f7;
+}
+
+.modal-footer {
+    border-top: 1px solid #4fc3f7;
+}
+
+/* Анимация для переключения вкладок */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Адаптивность для мобильных устройств */
+max-width: 768px {
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+}
